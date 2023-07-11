@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_categories",
+  "info": {
+    "singularName": "product-categorie",
+    "pluralName": "product-categories",
+    "displayName": "Product_categorie",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "naam": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "maxLength": 20,
+      "minLength": 5,
+      "default": "Product categorie naam (max: 20 char)"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "producten": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "product_category"
+    }
+  }
+}

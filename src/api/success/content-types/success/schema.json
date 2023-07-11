@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "successes",
+  "info": {
+    "singularName": "success",
+    "pluralName": "successes",
+    "displayName": "success"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "rich_text": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    }
+  }
+}

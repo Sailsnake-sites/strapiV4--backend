@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "overs",
+  "info": {
+    "singularName": "over",
+    "pluralName": "overs",
+    "displayName": "over",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "rich_text": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+	"seo": {
+		"type": "component",
+		"repeatable": false,
+		"component": "shared.seo"
+	  }
+  }
+}

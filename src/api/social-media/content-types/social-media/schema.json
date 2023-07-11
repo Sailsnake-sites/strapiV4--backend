@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "social_medias",
+  "info": {
+    "singularName": "social-media",
+    "pluralName": "social-medias",
+    "displayName": "social_media",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "google": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    }
+  }
+}
